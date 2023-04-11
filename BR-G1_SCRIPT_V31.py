@@ -86,77 +86,15 @@ def change_perspective_function(*args):
     
         persp = random.uniform(-360.0,360.0)
             
-        if persp <= 0 and persp > -45:
+        for i in range (0, 360, 45):
             
-            persp = -22.5
-        
-        if persp <= -45 and persp > -90:
-            
-            persp = -45
-            
-        if persp <= -90 and persp > -135:
-            
-            persp = -90
-            
-        if persp <= -135 and persp > -180:
-            
-            persp = -135
-            
-        if persp <= -180 and persp > -225:
-            
-            persp = -180
-            
-        if persp <= -225 and persp > -270:
-            
-            persp = -225
-            
-        if persp <= -270 and persp > -315:
-            
-            persp = -270
-            
-        if persp <= -315 and persp > -360:
-            
-            persp = -315
-            
-        if persp <= -360 and persp > -360:
-            
-            persp = -360
-        
-        if persp >= 0 and persp < 45:
-            
-            persp = 22.5
-        
-        if persp >= 45 and persp < 90:
-            
-            persp = 45
-            
-        if persp >= 90 and persp < 135:
-            
-            persp = 90
-            
-        if persp >= 135 and persp < 180:
-            
-            persp = 135
-            
-        if persp >= 180 and persp < 225:
-            
-            persp = 180
-            
-        if persp >= 225 and persp < 270:
-            
-            persp = 225
-            
-        if persp >= 270 and persp < 315:
-            
-            persp = 270
-            
-        if persp >= 315 and persp < 360:
-            
-            persp = 315
-            
-        if persp >= 360 and persp < 360:
-            
-            persp = 360
+            if persp <= i and persp > i-45:
+                
+                persp = i-22.5
+                
+            elif persp >= i and persp < i+45:
+                
+                persp = i+22.5
         
     if inputPerspective == 0:
     
@@ -172,77 +110,15 @@ def shape_creator_function(iterations,displacement,shapeSelection,secondShapeSel
     
         persp = random.uniform(-360.0,360.0)
             
-        if persp <= 0 and persp > -45:
+        for i in range (0, 360, 45):
             
-            persp = -22.5
-        
-        if persp <= -45 and persp > -90:
-            
-            persp = -45
-            
-        if persp <= -90 and persp > -135:
-            
-            persp = -90
-            
-        if persp <= -135 and persp > -180:
-            
-            persp = -135
-            
-        if persp <= -180 and persp > -225:
-            
-            persp = -180
-            
-        if persp <= -225 and persp > -270:
-            
-            persp = -225
-            
-        if persp <= -270 and persp > -315:
-            
-            persp = -270
-            
-        if persp <= -315 and persp > -360:
-            
-            persp = -315
-            
-        if persp <= -360 and persp > -360:
-            
-            persp = -360
-        
-        if persp >= 0 and persp < 45:
-            
-            persp = 22.5
-        
-        if persp >= 45 and persp < 90:
-            
-            persp = 45
-            
-        if persp >= 90 and persp < 135:
-            
-            persp = 90
-            
-        if persp >= 135 and persp < 180:
-            
-            persp = 135
-            
-        if persp >= 180 and persp < 225:
-            
-            persp = 180
-            
-        if persp >= 225 and persp < 270:
-            
-            persp = 225
-            
-        if persp >= 270 and persp < 315:
-            
-            persp = 270
-            
-        if persp >= 315 and persp < 360:
-            
-            persp = 315
-            
-        if persp >= 360 and persp < 360:
-            
-            persp = 360
+            if persp <= i and persp > i-45:
+                
+                persp = i-22.5
+                
+            elif persp >= i and persp < i+45:
+                
+                persp = i+22.5
         
     if randPerspective == 0:
     
